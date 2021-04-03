@@ -4,6 +4,8 @@ import 'review.dart';
 import 'review_list.dart';
 import 'gradient_back.dart';
 import 'header_appbar.dart';
+import 'platzi_trips.dart';
+import 'platzi_trips_cupertino.dart';
 
 void main() {
   runApp(MyApp());
@@ -29,7 +31,8 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
+      home: PlatziTripsCupertino()
+      // Scaffold(
         // appBar: AppBar(
         //   title: Text("Hey you"),
         // ),
@@ -41,19 +44,9 @@ class MyApp extends StatelessWidget {
         //     ReviewList()
         //   ],
         // ),
-        body: Stack(
-          children: <Widget>[
-            ListView(
-              children: <Widget>[
-                DescriptionPlace("Tokyo", 4, description),
-                ReviewList()
-              ]
-            ),
-            HeaderAppBar()
-          ],
-        ),
+        // body: 
 
-      )
+      // )
     );
   }
 }

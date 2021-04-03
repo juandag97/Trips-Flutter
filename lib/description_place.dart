@@ -13,7 +13,7 @@ class DescriptionPlace extends StatelessWidget {
 
       final star_half = Container (
         margin: EdgeInsets.only(
-          top: 330.0,
+          top: 340.0,
           right: 3.0,
         ),
 
@@ -25,7 +25,7 @@ class DescriptionPlace extends StatelessWidget {
 
       final star_border = Container (
         margin: EdgeInsets.only(
-          top: 330.0,
+          top: 340.0,
           right: 3.0,
         ),
 
@@ -38,7 +38,7 @@ class DescriptionPlace extends StatelessWidget {
 
       final star = Container (
         margin: EdgeInsets.only(
-          top: 330.0,
+          top: 340.0,
           right: 3.0,
         ),
 
@@ -69,7 +69,7 @@ class DescriptionPlace extends StatelessWidget {
         children: <Widget>[
           Container( 
             margin: EdgeInsets.only(
-              top: 330.0,
+              top: 340.0,
               left: 20.0,
               right: 20.0
             ),
@@ -89,7 +89,7 @@ class DescriptionPlace extends StatelessWidget {
             star,
             star,
             star,
-            star_border,
+            star,
           ],
         )
         ]
