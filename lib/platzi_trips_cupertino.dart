@@ -1,29 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'home_trips.dart';
-import 'search_trips.dart';
-import 'profile_trips.dart';
+// import 'home_trips.dart';
+// import 'search_trips.dart';
+// import 'profile_trips.dart';
+import 'Place/ui/screens/home_trips.dart';
+import 'Place/ui/screens/search_trips.dart';
+import 'User/ui/screens/profile_trips.dart';
 
 class PlatziTripsCupertino extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-       return Scaffold(
+    // TODO: implement build
+    return Scaffold(
       bottomNavigationBar: CupertinoTabScaffold(
         tabBar: CupertinoTabBar(
-            activeColor: Colors.indigo,
             items: [
               BottomNavigationBarItem(
-                  // icon: Icon(Icons.home, color: Colors.indigo),
-                  icon: Icon(Icons.home),
-                  label: ""
+                  icon: Icon(Icons.home, color: Colors.indigo),
+                  title: Text("")
               ),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.search),
-                  label: ""
+                  icon: Icon(Icons.search, color: Colors.indigo),
+                  title: Text("")
               ),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.person),
-                  label: "",
+                  icon: Icon(Icons.person, color: Colors.indigo),
+                  title: Text("")
               ),
             ]
         ),
@@ -47,8 +49,10 @@ class PlatziTripsCupertino extends StatelessWidget {
               break;
 
           }
-        }
-	)
-  );
+
+        },
+      ),
+    );
   }
+
 }
